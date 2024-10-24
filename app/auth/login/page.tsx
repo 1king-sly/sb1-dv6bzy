@@ -18,7 +18,6 @@ export default function LoginPage() {
     console.log('Login attempt:', { email, password });
     toast({
       title: "Login Successful",
-      description: "Welcome back!",
     });
     router.push('/');
   };

@@ -1,7 +1,7 @@
-import { useRouter } from 'next/router';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
+// Profiles array for static data
 const girlProfiles = [
   {
     id: 1,
@@ -25,6 +25,7 @@ const girlProfiles = [
   }
 ];
 
+// Dynamic page component
 export default function GirlProfile({ params }: { params: { id: string } }) {
   const profile = girlProfiles.find(p => p.id === parseInt(params.id));
 
@@ -64,4 +65,11 @@ export default function GirlProfile({ params }: { params: { id: string } }) {
       </Card>
     </div>
   );
+}
+
+// Function to predefine the available profile IDs for static generation
+export function generateStaticParams() {
+  return girlProfiles.map((profile) => ({
+    id: profile.id.toString(),
+  }));
 }

@@ -26,7 +26,7 @@ export function AuthModal({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
     console.log('Auth attempt:', { email, password, name: isLogin ? undefined : name })
     toast({
       title: isLogin ? "Login Successful" : "Signup Successful",
-      description: isLogin ? "Welcome back!" : "Welcome to BabyGal!",
+      
     })
     onClose()
   }

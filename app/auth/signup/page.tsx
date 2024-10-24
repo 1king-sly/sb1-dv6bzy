@@ -19,7 +19,6 @@ export default function SignupPage() {
     console.log('Signup attempt:', { name, email, password });
     toast({
       title: "Signup Successful",
-      description: "Welcome to BabyGal!",
     });
     router.push('/');
   };

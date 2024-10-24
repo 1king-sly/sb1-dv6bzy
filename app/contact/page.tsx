@@ -24,7 +24,7 @@ export default function ContactPage() {
     console.log(formData);
     toast({
       title: "Message Sent",
-      description: "We've received your message and will get back to you soon.",
+    
     });
     setFormData({ name: '', email: '', message: '' });
   };
@@ -35,7 +35,7 @@ export default function ContactPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
-          <p className="mb-4">We'd love to hear from you. Please fill out the form below or use our contact information.</p>
+          <p className="mb-4">Wed love to hear from you. Please fill out the form below or use our contact information.</p>
           <div className="mb-4">
             <strong>Address:</strong> 123 NGO Street, Nairobi, Kenya
           </div>
