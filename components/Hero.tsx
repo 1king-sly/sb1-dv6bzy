@@ -5,11 +5,10 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 const images = [
-  "/images/teen-girl.jpg",
-  "/images/pregnant-woman.jpg",
-  "/images/young-mother.jpg",
-  "/images/graduate.jpg",
-  "/images/successful-woman.jpg",
+  "/images/Teenage-girls.jpg",
+  "/images/influencers.jpg",
+  "/images/graduate.webp",
+  "/images/graduates.jpg",
 ];
 
 const Hero = () => {

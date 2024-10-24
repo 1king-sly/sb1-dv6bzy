@@ -4,13 +4,20 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const partners = [
-  { name: "UNICEF", logo: "/logos/unicef.png" },
-  { name: "WHO", logo: "/logos/who.png" },
-  { name: "UN Women", logo: "/logos/un-women.png" },
-  { name: "Save the Children", logo: "/logos/save-the-children.png" },
-  { name: "Plan International", logo: "/logos/plan-international.png" },
-  { name: "Girl Effect", logo: "/logos/girl-effect.png" },
+  { name: "UNICEF", logo: "/images/unicef.png" },
+  { name: "WHO", logo: "/images/who.png" },
+  { name: "Save the Children", logo: "/images/save-the-children.png" },
+  { name: "Girl Effect", logo: "/images/girl-effect.jpeg" },
+  { name: "UNICEF", logo: "/images/unicef.png" },
+  { name: "WHO", logo: "/images/who.png" },
+  { name: "Save the Children", logo: "/images/save-the-children.png" },
+  { name: "Girl Effect", logo: "/images/girl-effect.jpeg" },
+  { name: "UNICEF", logo: "/images/unicef.png" },
+  { name: "WHO", logo: "/images/who.png" },
+  { name: "Save the Children", logo: "/images/save-the-children.png" },
+  { name: "Girl Effect", logo: "/images/girl-effect.jpeg" },
 ];
+
 
 const Partners = () => {
   const [currentPartners, setCurrentPartners] = useState(partners.slice(0, 4));
